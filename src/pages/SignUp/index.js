@@ -118,6 +118,20 @@ const Page = () => {
                     </label>
                     <label className="area">
                         <div className="area--title">
+                           Senha
+                        </div>
+                        <div className="area--input">
+                            <input 
+                             type='password'
+                             disabled = { disabled }
+                             value = { password } 
+                             onChange={e => setConfirmPassword(e.target.value)}
+                             required
+                             />
+                        </div>
+                    </label>
+                    <label className="area">
+                        <div className="area--title">
                           Confirmar a Senha
                         </div>
                         <div className="area--input">
