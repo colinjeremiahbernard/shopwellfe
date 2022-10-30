@@ -81,6 +81,13 @@ const shopAPI = {
              options
         );
         return json;
+    },
+    getAd: async(id, otherAds = false) => {
+        const json = await apiFetchGet(
+            '/ad/item',
+            { id, otherAds }
+        );
+          return json;  
     }
 };
 export default () => shopAPI;
