@@ -1,12 +1,14 @@
 import React from "react";
-import { Switch } from 'react-router-dom'
+import { Switch } from 'react-router-dom';
 import RouterHandler from "./components/RouterHandler";
-import Home from './pages/Home'
-import About from './pages/About'
-import SignIn from './pages/SignIn'
-import SignUp from './pages/SignUp'
-import NotFound from './pages/NotFound'
-import AdPage from './pages/AdPage'
+import Home from './pages/Home';
+import About from './pages/About';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import NotFound from './pages/NotFound';
+import AdPage from './pages/AdPage';
+import AddAd from './pages/AddAd';
+import Ads from './pages/Ads';
 
 export default() => {
     return(
@@ -27,6 +29,12 @@ export default() => {
                    <AdPage />
             </RouterHandler>
             <RouterHandler private exact path="/post-an-ad">
+                   <AddAd />
+            </RouterHandler>
+            <RouterHandler private exact path="/Ads">
+                   <Ads />
+            </RouterHandler>
+            <RouterHandler private exact path="/my-account">
                    <About />
             </RouterHandler>
             <RouterHandler path="*">

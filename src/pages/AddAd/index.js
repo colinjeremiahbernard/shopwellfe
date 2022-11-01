@@ -155,7 +155,7 @@ const Page = () => {
                              type='checkbox'
                              className="check"
                              disabled = { disabled }
-                             value = { password } 
+                              
                              onChange={e => setPriceNegotiable(!priceNegotiable)}
                              checked = {priceNegotiable}
                              />
@@ -182,7 +182,7 @@ const Page = () => {
                             <input 
                              type='file'
                              disabled = { disabled }
-                             value = { password } 
+                              
                              ref = {fileField}
                              multiple
                              />
