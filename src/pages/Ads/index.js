@@ -86,7 +86,7 @@ const Page = () => {
     } else {
       setPageCount(0);
     }
-  },[adsTotal]);
+  },[adsTotal,adList.length]);
   useEffect (() => {
     setResultOpacity(0.3);
     getAdsList();

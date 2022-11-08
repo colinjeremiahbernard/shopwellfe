@@ -82,7 +82,7 @@ const Page = () => {
        thousandsSeparatorSymbol: '.',
        allowDecimal: true,
        decimalSymbol: ',',
-       prefix: '$'
+       
     });
 
     return (
